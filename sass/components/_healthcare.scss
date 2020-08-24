@@ -1,0 +1,23 @@
+.healthcare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__logo{
+        width: 500px;
+    }
+    &__info{
+        margin-left: 5rem;
+
+    }
+    &__text{
+        color: $gray-primary;
+        font-size: .8rem;
+        width: 70%;
+
+    }
+    &__title{
+        font-size: 2rem;
+
+    }
+}

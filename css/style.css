@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 10px;
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Mulish', sans-serif; }
+
+.active {
+  font-weight: bold; }
+
+.line {
+  width: 30px;
+  background-color: black;
+  margin: 2rem auto 0 auto;
+  height: 2px; }
+
+.testimonial--line {
+  background-color: #fff; }
+
+.servicess--btn,
+.healthcare--btn,
+.media--btn {
+  padding: 10px 15px;
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background: #458ff6;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: white;
+  border: 1px solid #458FF6;
+  color: #458FF6;
+  margin: 3rem auto;
+  padding: 10px 20px; }
+
+.healthcare--line,
+.media--line {
+  text-align: left;
+  margin: 2rem 0; }
+
+.dots--first {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.dots--second {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.actions {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 17rem; }
+  .actions span {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50px;
+    background-color: blue;
+    margin: 0 .5rem;
+    display: inline-block; }
+
+header {
+  position: relative; }
+
+.header__dots {
+  position: absolute;
+  top: 30%;
+  left: -13%; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  align-items: center; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  margin: 0 1rem; }
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  background: #458FF6;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 1rem; }
+
+.circle h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  transform: translate(-50%, -50%); }
+
+.full-circle {
+  display: flex;
+  align-items: center; }
+
+main {
+  display: flex;
+  justify-content: space-between; }
+
+.main__left h1 {
+  margin-top: 4rem;
+  font-size: 3rem;
+  width: 25rem;
+  font-weight: bold; }
+
+.main__left p {
+  font-size: 1rem;
+  margin-top: 2rem;
+  letter-spacing: 0.5px;
+  width: 25rem;
+  color: #7D7987; }
+
+.main--btn {
+  padding: 10px 15px;
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background: #458ff6;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none; }
+
+.main__right img {
+  width: 500px; }
+
+.services {
+  margin: 0 auto;
+  position: relative; }
+  .services__text {
+    margin: 2rem auto;
+    width: 60%;
+    color: #7D7987;
+    font-size: .8rem; }
+  .services__title {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem; }
+  .services__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    width: 60%;
+    margin: 2rem auto; }
+  .services__box {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 3px 1px -5px rgba(0, 0, 0, 0.1); }
+    .services__box img {
+      height: 70px;
+      object-fit: cover; }
+    .services__box h2 {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: .8rem; }
+    .services__box p {
+      color: #7D7987;
+      font-size: .7rem;
+      margin-top: 1rem; }
+  .services__shape {
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    z-index: -1;
+    width: 40rem; }
+  .services__dots {
+    position: absolute;
+    top: 50%;
+    right: 20%; }
+  .services__button {
+    text-align: center; }
+
+.healthcare {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .healthcare__logo {
+    width: 500px; }
+  .healthcare__info {
+    margin-left: 5rem; }
+  .healthcare__text {
+    color: #7D7987;
+    font-size: .8rem;
+    width: 70%; }
+  .healthcare__title {
+    font-size: 2rem; }
+
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem; }
+  .media__logo {
+    width: 500px; }
+  .media__info {
+    margin-right: 5rem; }
+  .media__text {
+    color: #7D7987;
+    font-size: .8rem;
+    width: 70%; }
+  .media__title {
+    font-size: 2rem; }
+
+.testimonial {
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  border-radius: 24px;
+  color: #fff;
+  padding: 10px;
+  margin: 4rem 0;
+  position: relative; }
+  .testimonial > h1 {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem; }
+  .testimonial__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center; }
+  .testimonial__left {
+    display: flex;
+    align-items: center; }
+    .testimonial__left h1 {
+      font-weight: bold;
+      font-size: 1.4rem; }
+  .testimonial__describtion {
+    margin-left: 1rem; }
+  .testimonial__quote {
+    font-size: .8rem;
+    width: 70%;
+    letter-spacing: .5px; }
