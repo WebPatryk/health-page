@@ -1,36 +1,36 @@
-.testimonial{
-    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
-    border-radius: 24px;
-    color: #fff;
-    padding:10px;
-    margin:4rem 0;
-    position: relative;
-    & > h1{
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 1.5rem;
+.testimonial {
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 24px;
+  color: #fff;
+  padding: 10px;
+  margin: 4rem 0;
+  position: relative;
+  & > h1 {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-weight: bold;
+      font-size: 1.4rem;
     }
-    &__box{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        align-items: center;
-        justify-items: center;
-    }
-    &__left{
-        display: flex;
-        align-items: center;
-        
-        h1{
-            font-weight: bold;
-            font-size: 1.4rem;
-        }
-    }
-    &__describtion{
-        margin-left: 1rem;
-    }
-    &__quote{
-        font-size: .8rem;
-        width: 70%;
-        letter-spacing: .5px;
-    }
+  }
+  &__describtion {
+    margin-left: 1rem;
+  }
+  &__quote {
+    font-size: 0.8rem;
+    width: 70%;
+    letter-spacing: 0.5px;
+  }
 }
