@@ -9,6 +9,9 @@
     margin-top: 2rem;
     text-align: center;
     font-size: 1.5rem;
+    @media only screen and (max-width: 476px) {
+      font-size: 1.2rem;
+    }
   }
   &__box {
     display: grid;
@@ -22,14 +25,25 @@
   &__left {
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 476px) {
+      margin-bottom: 2rem;
+    }
 
     h1 {
       font-weight: bold;
       font-size: 1.4rem;
     }
+    img {
+      @media only screen and (max-width: 476px) {
+        width: 100px;
+      }
+    }
   }
   &__describtion {
     margin-left: 1rem;
+    @media only screen and (max-width: 476px) {
+      margin-top: 1rem;
+    }
   }
   &__quote {
     font-size: 0.8rem;
@@ -37,7 +51,7 @@
     letter-spacing: 0.5px;
     @media only screen and (max-width: 1200px) {
       margin: 0 auto;
-      
+      font-size: 0.6rem;
     }
   }
 }

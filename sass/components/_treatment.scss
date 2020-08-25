@@ -1,93 +1,98 @@
-.treatment{
-    position: relative;
-    
-    &__title{
-        text-align: center;
-        font-weight: bold;
-        font-size: 2rem;
+.treatment {
+  position: relative;
 
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  &__photo {
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    max-height: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    &--1 {
+      background-image: url("../../images/needle.png");
     }
-    &__photo{
-        background-position:center;
-        background-size: cover;
-        height: 200px;
-        max-height: 200px;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        
-        &--1{
-            background-image: url('../../images/needle.png');
-        
-        }
-        &--2{
-            background-image: url('../../images/microscope.png');
-        }
-        &--3{
-            background-image: url('/images/mask.png');
-        }
-     
-       transition: all .3s ease-in-out;
+    &--2 {
+      background-image: url("../../images/microscope.png");
     }
-    &__photo:hover{
-        transform: scale(1.2);
+    &--3 {
+      background-image: url("/images/mask.png");
     }
-    &__container{
-        display: flex;
-        justify-content: center;
-        
-        }
-    &__box{
-        margin: 0 1rem;
-        width: auto;
-        overflow: hidden;
+
+    transition: all 0.3s ease-in-out;
+  }
+  &__photo:hover {
+    transform: scale(1.2);
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 476px) {
+      flex-direction: column;
     }
-    &__box-title{
-        padding-top: 3rem;   
-        font-weight: bold;
-        font-size: 1.3rem;
-        width: 80%;
-    }
-    &__box-info{
-        color: $gray-primary;
-        font-size: .8rem;
-    }
-    &__link{
-        color: $blue-primary;
-        font-size: 1rem;
-        font-weight: 600;
-        margin-left: 0;
-        transition: all .3s ease-in;
-        display: block;
-        &:hover{
-            text-decoration:none;
-            transform: translateX(10px);
-        }
-    }
-    &__btn{
-    @include button;
-    padding:8px 26px;
-    background-color: #fff;
-    border:1px solid $blue-primary ; 
-    display: block;
-    margin:3rem auto;
+  }
+  &__box {
+    margin: 0 1rem;
+    width: auto;
+    overflow: hidden;
+  }
+  &__box-title {
+    padding-top: 3rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 80%;
+  }
+  &__box-info {
+    color: $gray-primary;
+    font-size: 0.8rem;
+  }
+  &__link {
     color: $blue-primary;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 0;
+    transition: all 0.3s ease-in;
+    display: block;
+    &:hover {
+      text-decoration: none;
+      transform: translateX(10px);
     }
-    &__circle{
-        position: absolute;
-        top:-20%;
-        right: -14%;
-        z-index: -1;
-        @media only screen and (max-width: 1200px) {
-           right: 0;
-          }
+  }
+  &__btn {
+    @include button;
+    padding: 8px 26px;
+    background-color: #fff;
+    border: 1px solid $blue-primary;
+    display: block;
+    margin: 3rem auto;
+    color: $blue-primary;
+  }
+  &__describtion {
+    @media only screen and (max-width: 576px) {
+      margin-bottom: 2rem;
     }
-    &__dots{
-        position: absolute;
-        top:0;
-        left: -14%;
-        z-index: -1;
+  }
+  &__circle {
+    position: absolute;
+    top: -20%;
+    right: -14%;
+    z-index: -1;
+    @media only screen and (max-width: 1200px) {
+      right: 0;
     }
-    &__line{
-        margin-bottom: 1rem;
-    }
+  }
+  &__dots {
+    position: absolute;
+    top: 0;
+    left: -14%;
+    z-index: -1;
+  }
+  &__line {
+    margin-bottom: 1rem;
+  }
 }
