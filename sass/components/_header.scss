@@ -1,9 +1,9 @@
-header{
+header {
   position: relative;
 }
-.header__dots{
+.header__dots {
   position: absolute;
-  top:30%;
+  top: 30%;
   left: -13%;
 }
 nav {
@@ -12,7 +12,7 @@ nav {
   padding: 30px 0;
   align-items: center;
 }
-ul{
+ul {
   list-style-type: none;
 }
 a {
@@ -52,7 +52,6 @@ main {
   font-size: 3rem;
   width: 25rem;
   font-weight: bold;
-  ;
 }
 .main__left p {
   font-size: 1rem;
@@ -61,10 +60,9 @@ main {
   width: 25rem;
   color: $gray-primary;
 }
-.main--btn{
+.main--btn {
   @include button;
 }
 .main__right img {
   width: 500px;
 }
-

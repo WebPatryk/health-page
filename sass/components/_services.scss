@@ -1,59 +1,58 @@
-.services{
-    margin:0 auto;
-    position: relative;
+.services {
+  margin: 0 auto;
+  position: relative;
 
-&__text{
+  &__text {
     margin: 2rem auto;
     width: 60%;
     color: $gray-primary;
-    font-size: .8rem;
-}
-&__title{
-
+    font-size: 0.8rem;
+  }
+  &__title {
     margin-top: 2rem;
     text-align: center;
     font-size: 2rem;
-}
-&__container{
+  }
+  &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    grid-gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
     width: 60%;
-    margin:2rem auto;
-}
-&__box{
+    margin: 2rem auto;
+  }
+  &__box {
     background-color: #fff;
     border-radius: 20px;
-    padding:10px 20px;
-    box-shadow: 0 3px 1px -5px rgba(0,0,0,.1);
-    img{
-        height: 70px;
-        object-fit:cover;
+    padding: 10px 20px;
+    box-shadow: 0 3px 1px -5px rgba(0, 0, 0, 0.1);
+    img {
+      height: 70px;
+      object-fit: cover;
     }
-    h2{
-        font-weight: bold;
-        font-size: 1rem;
-        margin-top:.8rem;
+    h2 {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 0.8rem;
     }
-    p{
-        color: $gray-primary;
-        font-size: .7rem;
-        margin-top: 1rem;
+    p {
+      color: $gray-primary;
+      font-size: 0.7rem;
+      margin-top: 1rem;
     }
-}
-&__shape{
+  }
+  &__shape {
     position: absolute;
-    top:-20%;
+    top: -20%;
     left: -20%;
     z-index: -1;
     width: 40rem;
-}
-&__dots{
+  }
+  &__dots {
     position: absolute;
-    top:50%;
+    top: 50%;
     right: 20%;
-}
-&__button{
+  }
+  &__button {
     text-align: center;
-}
+  }
 }
