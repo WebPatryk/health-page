@@ -1,6 +1,6 @@
-header {
+.header {
   position: relative;
-}
+
 .header__dots {
   position: absolute;
   top: 30%;
@@ -9,17 +9,51 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
   align-items: center;
+  padding: 30px 0;
 }
 ul {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+li{
+  cursor: pointer;
+  position: relative;
+
+
 }
 a {
   font-size: 1rem;
   color: black;
   text-decoration: none;
   margin: 0 1rem;
+  transition: all .3s ease-in;
+  position: relative;
+  color: black ;
+ 
+  &:hover{
+    color: #fff;
+    font-weight: bold;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    top:-45%;
+    left:-10%;
+    width: 120%;
+    height: 40px;
+    background-color: $blue-primary;
+    transform: scale(0);
+    z-index: -1;
+    border-radius: 20px;
+    padding:12px 25px;
+  }
+ &:hover::before{
+   transition: all .3s ease-in;
+   transform-origin: left;
+   transform:scale(1);
+ }
 }
 
 .circle {
@@ -30,6 +64,7 @@ a {
   position: relative;
   margin-right: 1rem;
 }
+
 .circle h1 {
   position: absolute;
   top: 50%;
@@ -46,6 +81,20 @@ a {
 main {
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+.main__left{
+  @media only screen and (max-width: 1200px) {
+    margin: 0 auto;
+  }
+}
+
+.main__right{
+  @media only screen and (max-width: 1200px) {
+    margin: 0 auto;
+  }
 }
 .main__left h1 {
   margin-top: 4rem;
@@ -62,7 +111,17 @@ main {
 }
 .main--btn {
   @include button;
+    @media only screen and (max-width: 1200px) {
+      display: block ;
+      margin: 0 auto 4rem auto;
+    }
+  
 }
 .main__right img {
   width: 500px;
+    @media only screen and (max-width: 1200px) {
+      width: 300px;
+    }
+  
+}
 }

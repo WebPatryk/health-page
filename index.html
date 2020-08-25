@@ -18,23 +18,26 @@
     />
   </head>
   <body>
-    <header>
+    <div class="container">
+
+    <header class="header">
       <img src="./images/dots.svg" alt="dots" class="header__dots" />
       <nav>
-        <div class="full-circle">
+        <a href="index.html"><div class="full-circle">
           <div class="circle">
             <h1>T</h1>
           </div>
           <h1>Travalgar</h1>
         </div>
+        </a>  
         <ul>
-          <li>
-            <a href="#" class="active">Home</a>
-            <a href="#">Find a doctor</a>
-            <a href="#">Apss</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Abouts us</a>
-          </li>
+          
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Find a doctor</a></li>
+            <li><a href="#">Apss</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Abouts us</a></li>
+          
         </ul>
       </nav>
       <main class="main">
@@ -188,14 +191,104 @@
     </section>
 
     <div class="actions">
-      <div>left</div>
+      <div class="arrow">&larr;</div>
       <div>
-        <span></span>
+        <span class="dot--active"></span>
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <div>Right</div>
+      <div class="arrow">&rarr;</div>
     </div>
+    <section class="treatment">
+      <img src="./images/circle.svg" alt="circle" class="treatment__circle">
+      <img src="./images/dots.svg" alt="dots" class="treatment__dots">
+      <h1 class="treatment__title">Check out our leatest article</h1>
+      <div class="line treatment__line"></div>
+      <article class="treatment__container">
+        <div class="treatment__box">
+        <a href="#"> <div class="treatment__photo treatment__photo--1"></div></a>
+          <div class="treatment__describtion">
+            <h1 class="treatment__box-title">Disease detection, check 
+              up in the laboratory</h1>
+            <p class="treatment__box-info">In this case, the role of the health laboratory is very important to do
+              a disease detection...</p>
+            <a href="#" class="treatment__link">Read more -></a>
+          </div>
+        </div>
+
+        <div class="treatment__box">
+        <a href="#">  <div class="treatment__photo treatment__photo--2"></div></a>
+          <div class="treatment__describtion">
+            <h1 class="treatment__box-title">Herbal medicines that are 
+              safe for consumption</h1>
+            <p class="treatment__box-info">Herbal medicine is very widely used at this time because of its very good for your health...</p>
+            <a href="#" class="treatment__link">Read more -></a>
+            </div>
+        </div>
+        
+
+        <div class="treatment__box">
+          <a href="#"><div class="treatment__photo treatment__photo--3"></div></a>
+          <div class="treatment__describtion">
+            <h1 class="treatment__box-title">Natural care for healthy 
+              facial skin</h1>
+            <p class="treatment__box-info">A healthy lifestyle should start from now and also for your skin health.
+              There are some...</p>
+            <a href="#" class="treatment__link">Read more -></a>
+            </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="box">
+      <button class="treatment__btn">View all</button>
+    </div>
+  </div>
+
+<footer class="footer">
+  <img src="./images/dots.svg" alt="dots" class="footer--dots-1">
+  <img src="./images/dots.svg" alt="dots" class="footer--dots-2">
+  <div class="footer__container">
+    <div class="footer__row footer--first-row">
+<a href="#">
+      <div class="full-circle-2">
+        <div class="circle-2">
+          <h1>T</h1>
+        </div>
+        <h1>Travalgar</h1>
+      </div>
+      </a>
+      <p class="footer--long-text">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
+        for everyone</p>
+        <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+    </div>
+        <div class="footer__row">
+         <a href="#"> <h1>Company</h1></a>
+         <a href="#"> <p>About</p></a>
+         <a href="#"> <p>Testimentals</p></a>
+         <a href="#"> <p>Find a doctors</p></a>
+         <a href="#"> <p>Apps</p></a>
+        </div>
+
+        <div class="footer__row">
+        <a href="#"> <h1>Region</h1></a>
+        <a href="#"> <p>Indonesia</p></a>
+        <a href="#"> <p>Singapur</p></a>
+        <a href="#"> <p>Hongkong</p></a>
+        <a href="#"> <p>Canada</p></a>
+        </div>
+
+        <div class="footer__row">
+          <h1>Help</h1>
+         <a href="#"> <p>Help center</p></a>
+         <a href="#"> <p>Contact supports</p></a>
+         <a href="#"> <p>Instructions</p></a>
+         <a href="#"> <p>How it works </p></a>
+        </div>
+    </div>
+</footer>
+
+
   </body>
 </html>

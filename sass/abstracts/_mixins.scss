@@ -9,4 +9,8 @@
   cursor: pointer;
   border: none;
   outline: none;
+  transition: all .3s ease-in;
+  &:hover{
+    opacity: .7;
+  }
 }
