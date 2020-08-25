@@ -77,6 +77,9 @@
         top:-20%;
         right: -14%;
         z-index: -1;
+        @media only screen and (max-width: 1200px) {
+           right: 0;
+          }
     }
     &__dots{
         position: absolute;

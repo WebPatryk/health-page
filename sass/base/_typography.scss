@@ -36,6 +36,9 @@
 .media--line {
   text-align: left;
   margin: 2rem 0;
+  @media only screen and (max-width: 1200px) {
+  margin:1rem auto;
+  }
 }
 .dots--first {
   position: absolute;

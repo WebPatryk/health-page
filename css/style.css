@@ -65,6 +65,10 @@ body {
 .media--line {
   text-align: left;
   margin: 2rem 0; }
+  @media only screen and (max-width: 1200px) {
+    .healthcare--line,
+    .media--line {
+      margin: 1rem auto; } }
 
 .dots--first {
   position: absolute;
@@ -276,6 +280,9 @@ body {
     left: -20%;
     z-index: -1;
     width: 40rem; }
+    @media only screen and (max-width: 476px) {
+      .services__shape {
+        width: 20px; } }
   .services__dots {
     position: absolute;
     top: 50%;
@@ -287,14 +294,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 1200px) {
+    .healthcare {
+      flex-direction: column; } }
   .healthcare__logo {
     width: 500px; }
+    @media only screen and (max-width: 1200px) {
+      .healthcare__logo {
+        width: 300px; } }
   .healthcare__info {
     margin-left: 5rem; }
+    @media only screen and (max-width: 1200px) {
+      .healthcare__info {
+        text-align: center; } }
   .healthcare__text {
     color: #7d7987;
     font-size: 0.8rem;
     width: 70%; }
+    @media only screen and (max-width: 1200px) {
+      .healthcare__text {
+        margin: 0 auto; } }
   .healthcare__title {
     font-size: 2rem; }
 
@@ -303,14 +322,27 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 5rem; }
+  @media only screen and (max-width: 1200px) {
+    .media {
+      flex-direction: column; } }
   .media__logo {
     width: 500px; }
+    @media only screen and (max-width: 1200px) {
+      .media__logo {
+        width: 300px; } }
   .media__info {
     margin-right: 5rem; }
+    @media only screen and (max-width: 1200px) {
+      .media__info {
+        margin: 0 auto;
+        text-align: center; } }
   .media__text {
     color: #7d7987;
     font-size: 0.8rem;
     width: 70%; }
+    @media only screen and (max-width: 1200px) {
+      .media__text {
+        margin: 1rem auto; } }
   .media__title {
     font-size: 2rem; }
 
@@ -330,6 +362,9 @@ body {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center; }
+    @media only screen and (max-width: 1200px) {
+      .testimonial__box {
+        grid-template-columns: 1fr; } }
   .testimonial__left {
     display: flex;
     align-items: center; }
@@ -342,6 +377,9 @@ body {
     font-size: 0.8rem;
     width: 70%;
     letter-spacing: 0.5px; }
+    @media only screen and (max-width: 1200px) {
+      .testimonial__quote {
+        margin: 0 auto; } }
 
 .treatment {
   position: relative; }
@@ -415,6 +453,9 @@ body {
     top: -20%;
     right: -14%;
     z-index: -1; }
+    @media only screen and (max-width: 1200px) {
+      .treatment__circle {
+        right: 0; } }
   .treatment__dots {
     position: absolute;
     top: 0;
