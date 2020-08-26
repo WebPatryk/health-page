@@ -131,42 +131,59 @@
     color: #fff !important;
   }
 }
-.active-ham{
+.active-ham {
   position: relative;
   margin-top: 1;
 
-  & > span{
-  background-color: #fff !important;
+  & > span {
+    background-color: #fff !important;
   }
 }
 
-.active-ham span:nth-child(1){
+.active-ham span:nth-child(1) {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 0;
-  transform:rotate(45deg);
-  transition:all .4s ease-in-out;
-
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
 }
-.active-ham span:nth-child(2){
+.active-ham span:nth-child(2) {
   visibility: hidden;
 }
-.active-ham span:nth-child(3){
+.active-ham span:nth-child(3) {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 0;
-  transform:rotate(-45deg);
-  transition:all .4s ease-in-out;
-
+  transform: rotate(-45deg);
+  transition: all 0.4s ease-in-out;
 }
 
-.nav-sticky{
+.nav-sticky {
   width: 100%;
   background-color: rgb(190, 225, 228);
 }
-.header-list{
+.header-list {
   margin: 0;
   @media only screen and (max-width: 1200px) {
-  position: absolute !important;
+    position: absolute !important;
   }
+}
+
+.navik-active {
+  transform: translateX(0);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+.active-link {
+  border-bottom: 3px solid $blue-primary;
+  display: inline-block;
+  padding: 0.5rem 1rem;
 }
