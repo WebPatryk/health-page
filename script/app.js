@@ -5,6 +5,7 @@ const headerNav = document.querySelector(".header__nav");
 
 hamburger.addEventListener("click", () => {
   headerList.classList.toggle("links-active");
+  hamburger.classList.toggle("active-ham");
   headerNav.classList.toggle("nav-active");
   headerLink.classList.toggle("blue-link");
 });
@@ -41,7 +42,9 @@ let tlThird = gsap.timeline({
   }
 })
 
-tlThird.fromTo(".testimonial", {y:0, rotation:180},{rotation:0, duration:1.5})
+tlThird.fromTo(".testimonial__describtion", {x:-800,},{x:0, duration:1.5,delay:.5})
+tlThird.fromTo(".testimonial__photo", {x:-800},{x:0, duration:1.5},"-=.5")
+tlThird.fromTo(".testimonial__quote", {x:800},{x:0, duration:1.5},"-=.5")
 
 
 // Forth animation
@@ -71,3 +74,29 @@ gsap.from('.services__box',
   x:-1000,
   duration:1.5,
 })
+
+
+
+//Cursor animation
+const mouseCursor = document.querySelector('#cursor');
+const links = document.querySelectorAll('a');
+console.log(links);
+const cursor = (e)=>{
+  mouseCursor.style.top = e.pageY + 'px';
+  mouseCursor.style.left= e.pageX + 'px';
+
+}
+
+links.forEach(link=>{
+  link.addEventListener('mouseover',()=>{
+    mouseCursor.classList.add('grow')
+  })
+
+  link.addEventListener('mouseleave',()=>{
+    mouseCursor.classList.remove('grow')
+  })
+})
+
+
+
+window.addEventListener('mousemove',cursor);

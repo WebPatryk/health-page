@@ -130,3 +130,30 @@
     color: #fff !important;
   }
 }
+.active-ham{
+  position: relative;
+
+  & > span{
+  background-color: #fff !important;
+  }
+}
+
+.active-ham span:nth-child(1){
+  position: absolute;
+  top:50%;
+  left: 0;
+  transform:rotate(45deg);
+  transition:all .4s ease-in-out;
+
+}
+.active-ham span:nth-child(2){
+  visibility: hidden;
+}
+.active-ham span:nth-child(3){
+  position: absolute;
+  top:50%;
+  left: 0;
+  transform:rotate(-45deg);
+  transition:all .4s ease-in-out;
+
+}
