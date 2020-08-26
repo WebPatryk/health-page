@@ -733,13 +733,13 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .treatment__photo--1 {
-  background-image: url("../../images/needle.png");
+  background-image: url("../images/needle.png");
 }
 .treatment__photo--2 {
-  background-image: url("../../images/microscope.png");
+  background-image: url("../images/microscope.png");
 }
 .treatment__photo--3 {
-  background-image: url("/images/mask.png");
+  background-image: url("../images/mask.png");
 }
 .treatment__photo:hover {
   transform: scale(1.2);
