@@ -18,7 +18,7 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container container__main" id="container">
       <header class="header">
         <img src="./images/dots.svg" alt="dots" class="header__dots" />
         <div class="hamburger">
@@ -213,7 +213,7 @@
         <h1 class="treatment__title">Check out our leatest article</h1>
         <div class="line treatment__line"></div>
         <article class="treatment__container">
-          <div class="treatment__box">
+          <div class="treatment__box box--1">
             <a href="#">
               <div class="treatment__photo treatment__photo--1"></div
             ></a>
@@ -229,7 +229,7 @@
             </div>
           </div>
 
-          <div class="treatment__box">
+          <div class="treatment__box box--2">
             <a href="#">
               <div class="treatment__photo treatment__photo--2"></div
             ></a>
@@ -245,7 +245,7 @@
             </div>
           </div>
 
-          <div class="treatment__box">
+          <div class="treatment__box box--3">
             <a href="#"
               ><div class="treatment__photo treatment__photo--3"></div
             ></a>
@@ -312,6 +312,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+
     <script src="script/app.js"></script>
   </body>
 </html>

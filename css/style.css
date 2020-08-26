@@ -50,7 +50,7 @@ body {
   cursor: pointer;
   border: none;
   outline: none;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
   background-color: white;
   border: 1px solid #458ff6;
   color: #458ff6;
@@ -59,7 +59,7 @@ body {
   .servicess--btn:hover,
   .healthcare--btn:hover,
   .media--btn:hover {
-    opacity: .7; }
+    opacity: 0.7; }
 
 .healthcare--line,
 .media--line {
@@ -90,7 +90,7 @@ body {
     height: 0.6rem;
     width: 0.6rem;
     border-radius: 50px;
-    background-color: #5B9BF3;
+    background-color: #5b9bf3;
     margin: 0 0.5rem;
     display: inline-block;
     opacity: 0.5; }
@@ -98,13 +98,13 @@ body {
 .arrow {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #5B9BF3; }
+  color: #5b9bf3; }
 
 .dot--active {
   opacity: 1 !important; }
 
 .box {
-  width: 100%; }
+  width: 100% !important; }
 
 .circle-2 {
   width: 3rem;
@@ -144,7 +144,7 @@ body {
   height: 150vh;
   width: 100%;
   z-index: 1;
-  background-color: #5B9BF3;
+  background-color: #5b9bf3;
   overflow: hidden; }
 
 .blue-link {
@@ -249,7 +249,8 @@ body {
     align-items: center; }
   .header main {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    overflow-x: hidden; }
     @media only screen and (max-width: 1200px) {
       .header main {
         flex-direction: column; } }
@@ -295,9 +296,9 @@ body {
     cursor: pointer;
     border: none;
     outline: none;
-    transition: all .3s ease-in; }
+    transition: all 0.3s ease-in; }
     .header .main--btn:hover {
-      opacity: .7; }
+      opacity: 0.7; }
     @media only screen and (max-width: 1200px) {
       .header .main--btn {
         display: block;
@@ -538,7 +539,7 @@ body {
     cursor: pointer;
     border: none;
     outline: none;
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
     padding: 8px 26px;
     background-color: #fff;
     border: 1px solid #458ff6;
@@ -546,7 +547,7 @@ body {
     margin: 3rem auto;
     color: #458ff6; }
     .treatment__btn:hover {
-      opacity: .7; }
+      opacity: 0.7; }
   @media only screen and (max-width: 576px) {
     .treatment__describtion {
       margin-bottom: 2rem; } }
@@ -567,7 +568,7 @@ body {
     margin-bottom: 1rem; }
 
 .footer {
-  background: #5B9BF3;
+  background: #5b9bf3;
   padding: 100px 0;
   color: #fff;
   position: relative; }
