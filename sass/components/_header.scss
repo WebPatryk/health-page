@@ -6,6 +6,9 @@
     top: 30%;
     left: -13%;
   }
+  &__nav{
+    margin-top: .5rem;
+  }
   &__link {
     transition: all 0.3s ease;
     text-decoration: none !important;
@@ -22,9 +25,24 @@
 
   nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0;
+    justify-content: space-evenly;
+    align-items: center !important;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    margin:0 auto;
+    transition: all .3s ease-in-out;
+    @media only screen and (max-width: 1200px) {
+      
+      
+    }
+      @media only screen and (max-width: 496px) {
+      display: block;
+      
+    }
   }
 
   ul {
@@ -41,13 +59,14 @@
   .hamburger {
     width: 30px;
     display: none;
+
     @media only screen and (max-width: 992px) {
       margin-left: auto;
       display: inline-block;
       position: absolute;
-      top: 5%;
+      top: 2%;
       right: 10%;
-      z-index: 5;
+      z-index: 10005;
     }
     span {
       display: block;
@@ -117,6 +136,7 @@
   .circle-title{
     @media only screen and (max-width: 476px) {
       font-size:1.2rem;
+      margin: 0;
     }
   }
   .full-circle {
@@ -128,13 +148,16 @@
     display: flex;
     justify-content: space-between;
       overflow-x: hidden;
+      margin-top: 5rem;
     @media only screen and (max-width: 1200px) {
       flex-direction: column;
+      margin-top: 0;
     }
   }
   .main__left {
+
     @media only screen and (max-width: 1200px) {
-      margin: 0 auto;
+      margin: 2rem auto;
     }
     @media only screen and (max-width: 576px) {
       width: 80%;

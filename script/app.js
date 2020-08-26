@@ -100,3 +100,38 @@ links.forEach(link=>{
 
 
 window.addEventListener('mousemove',cursor);
+
+
+
+
+const windowScroll = ()=>{
+
+
+  const nav = document.querySelector('.header__nav');
+  
+  
+  if(window.pageYOffset >= 100){
+    nav.classList.add('nav-sticky')
+  }else{
+    nav.classList.remove('nav-sticky')
+  }
+  }
+
+
+window.addEventListener('scroll',windowScroll);
+
+
+const headerHref = document.querySelectorAll('.header__href')
+
+function selectedLink(){
+  removeActive()
+  this.classList.add('active')
+}
+
+function removeActive(){
+  headerHref.forEach(href=>href.classList.remove('active'))
+}
+  headerHref.forEach(href=>{
+    href.addEventListener('click',selectedLink)
+    
+  })

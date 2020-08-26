@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-size: 10px;
   font-family: "Mulish", sans-serif;
@@ -202,12 +205,13 @@ body {
   overflow: hidden; }
 
 .blue-link {
-  top: 2% !important; }
+  top: 1% !important; }
   .blue-link h1 {
     color: #fff !important; }
 
 .active-ham {
-  position: relative; }
+  position: relative;
+  margin-top: 1; }
   .active-ham > span {
     background-color: #fff !important; }
 
@@ -228,12 +232,24 @@ body {
   transform: rotate(-45deg);
   transition: all .4s ease-in-out; }
 
+.nav-sticky {
+  width: 100%;
+  background-color: #bee1e4; }
+
+.header-list {
+  margin: 0; }
+  @media only screen and (max-width: 1200px) {
+    .header-list {
+      position: absolute !important; } }
+
 .header {
   position: relative; }
   .header__dots {
     position: absolute;
     top: 30%;
     left: -13%; }
+  .header__nav {
+    margin-top: .5rem; }
   .header__link {
     transition: all 0.3s ease;
     text-decoration: none !important;
@@ -247,9 +263,19 @@ body {
       opacity: 0.5; }
   .header nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0; }
+    justify-content: space-evenly;
+    align-items: center !important;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    margin: 0 auto;
+    transition: all .3s ease-in-out; }
+    @media only screen and (max-width: 496px) {
+      .header nav {
+        display: block; } }
   .header ul {
     list-style-type: none;
     display: flex;
@@ -266,9 +292,9 @@ body {
         margin-left: auto;
         display: inline-block;
         position: absolute;
-        top: 5%;
+        top: 2%;
         right: 10%;
-        z-index: 5; } }
+        z-index: 10005; } }
     .header .hamburger span {
       display: block;
       margin: 0.4rem;
@@ -323,20 +349,23 @@ body {
     transform: translate(-50%, -50%); }
   @media only screen and (max-width: 476px) {
     .header .circle-title {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem;
+      margin: 0; } }
   .header .full-circle {
     display: flex;
     align-items: center; }
   .header main {
     display: flex;
     justify-content: space-between;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    margin-top: 5rem; }
     @media only screen and (max-width: 1200px) {
       .header main {
-        flex-direction: column; } }
+        flex-direction: column;
+        margin-top: 0; } }
   @media only screen and (max-width: 1200px) {
     .header .main__left {
-      margin: 0 auto; } }
+      margin: 2rem auto; } }
   @media only screen and (max-width: 576px) {
     .header .main__left {
       width: 80%; } }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Health care</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -20,7 +20,7 @@
   <body>
     <div class="cursor" id="cursor"></div>
     <div class="container container__main" id="container">
-      <header class="header">
+      <header class="header" id="home">
         <img src="./images/dots.svg" alt="dots" class="header__dots" />
         <div class="hamburger">
           <span></span>
@@ -28,6 +28,7 @@
           <span></span>
         </div>
         <nav class="header__nav">
+     
           <a href="index.html" class="header__link"
             ><div class="full-circle">
               <div class="circle">
@@ -37,11 +38,11 @@
             </div>
           </a>
           <ul class="header-list">
-            <li><a href="#" class="header__href active">Home</a></li>
-            <li><a href="#" class="header__href">Find a doctor</a></li>
-            <li><a href="#" class="header__href">Apss</a></li>
-            <li><a href="#" class="header__href">Testimonials</a></li>
-            <li><a href="#" class="header__href">Abouts us</a></li>
+            <li><a href="#home" class="header__href active">Home</a></li>
+            <li><a href="#find-a-doctor" class="header__href">Find a doctor</a></li>
+            <li><a href="#apps" class="header__href">Apss</a></li>
+            <li><a href="#testimonials" class="header__href">Testimonials</a></li>
+            <li><a href="#about-us" class="header__href">Abouts us</a></li>
           </ul>
         </nav>
         <main class="main">
@@ -59,7 +60,7 @@
         </main>
       </header>
 
-      <section class="services">
+      <section class="services" id="find-a-doctor">
         <img
           src="./images/shape.svg"
           alt="wave shape"
@@ -134,7 +135,7 @@
         </article>
       </section>
 
-      <section class="healthcare">
+      <section class="healthcare" id="apps">
         <div class="healthcare__image">
           <img
             src="/images/trafalgar-illustration.png"
@@ -174,7 +175,7 @@
         </div>
       </section>
 
-      <section class="testimonial">
+      <section class="testimonial" id="testimonials">
         <img src="./images/light-dots.svg" alt="dots" class="dots--first" />
         <img src="./images/dots.svg" alt="dots" class="dots--second" />
 
@@ -208,7 +209,7 @@
         </div>
         <div class="arrow">&rarr;</div>
       </div>
-      <section class="treatment">
+      <section class="treatment" id="about-us">
         <img src="./images/circle.svg" alt="circle" class="treatment__circle" />
         <img src="./images/dots.svg" alt="dots" class="treatment__dots" />
         <h1 class="treatment__title">Check out our leatest article</h1>
