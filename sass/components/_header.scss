@@ -27,10 +27,10 @@
     display: flex;
     justify-content: space-between;
     overflow-x: hidden;
-    margin-top: 5rem;
-    @media only screen and (max-width: 1200px) {
+    margin-top: 3.5rem;
+    @media only screen and (max-width: 900px) {
       flex-direction: column;
-      margin-top: 0;
+      margin-top: 2rem;
     }
   }
   .main__left {
@@ -43,6 +43,8 @@
   }
 
   .main__right {
+    display: flex;
+    align-items: center;
     @media only screen and (max-width: 1200px) {
       margin: 0 auto;
       text-align: center;
@@ -69,17 +71,23 @@
       font-size: 0.8rem;
       text-align: center;
       width: 100%;
+      margin-bottom: 2rem;
     }
   }
   .main--btn {
     @include button;
+    z-index: 10000;
     @media only screen and (max-width: 1200px) {
       display: block;
       margin: 0 auto 4rem auto;
+
     }
   }
   .main__right img {
     width: 500px;
+    @media only screen and (max-width: 1400px) {
+     width: 400px;
+    }
     @media only screen and (max-width: 1200px) {
       width: 300px;
     }

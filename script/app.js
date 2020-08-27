@@ -1,14 +1,3 @@
-// const hamburger = document.querySelector(".hamburger");
-// const headerList = document.querySelector(".header-list");
-// const headerLink = document.querySelector(".header__link");
-// const headerNav = document.querySelector(".header__nav");
-
-// hamburger.addEventListener("click", () => {
-//   headerList.classList.toggle("links-active");
-//   hamburger.classList.toggle("active-ham");
-//   headerNav.classList.toggle("nav-active");
-//   headerLink.classList.toggle("blue-link");
-// });
 
 // First animation
 let tlFirst = gsap.timeline({

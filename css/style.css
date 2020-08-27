@@ -3,12 +3,10 @@
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  font-family: sans-serif;
   position: fixed;
   top: 0;
   left: 10%;
   width: 80%;
-  margin: 0 auto;
   z-index: 100;
   transition: all 0.4s ease-in-out; }
 
@@ -33,6 +31,8 @@
 .nav-links li {
   list-style-type: none;
   transition: all 0.3s ease-in-out; }
+  .nav-links li:hover {
+    opacity: .5; }
 
 .nav-links a {
   color: black;
@@ -302,6 +302,12 @@ a {
   display: inline-block;
   padding: 0.5rem 1rem; }
 
+.anchor {
+  display: block;
+  height: 92px;
+  margin-top: -92px;
+  visibility: hidden; }
+
 .header {
   position: relative; }
   .header__dots {
@@ -325,21 +331,24 @@ a {
     display: flex;
     justify-content: space-between;
     overflow-x: hidden;
-    margin-top: 5rem; }
-    @media only screen and (max-width: 1200px) {
+    margin-top: 3.5rem; }
+    @media only screen and (max-width: 900px) {
       .header main {
         flex-direction: column;
-        margin-top: 0; } }
+        margin-top: 2rem; } }
   @media only screen and (max-width: 1200px) {
     .header .main__left {
       margin: 2rem auto; } }
   @media only screen and (max-width: 576px) {
     .header .main__left {
       width: 80%; } }
-  @media only screen and (max-width: 1200px) {
-    .header .main__right {
-      margin: 0 auto;
-      text-align: center; } }
+  .header .main__right {
+    display: flex;
+    align-items: center; }
+    @media only screen and (max-width: 1200px) {
+      .header .main__right {
+        margin: 0 auto;
+        text-align: center; } }
   .header .main__left h1 {
     margin-top: 4rem;
     font-size: 3rem;
@@ -360,7 +369,8 @@ a {
       .header .main__left p {
         font-size: 0.8rem;
         text-align: center;
-        width: 100%; } }
+        width: 100%;
+        margin-bottom: 2rem; } }
   .header .main--btn {
     padding: 10px 15px;
     color: #fff;
@@ -372,7 +382,8 @@ a {
     cursor: pointer;
     border: none;
     outline: none;
-    transition: all 0.3s ease-in; }
+    transition: all 0.3s ease-in;
+    z-index: 10000; }
     .header .main--btn:hover {
       opacity: 0.7; }
     @media only screen and (max-width: 1200px) {
@@ -381,6 +392,9 @@ a {
         margin: 0 auto 4rem auto; } }
   .header .main__right img {
     width: 500px; }
+    @media only screen and (max-width: 1400px) {
+      .header .main__right img {
+        width: 400px; } }
     @media only screen and (max-width: 1200px) {
       .header .main__right img {
         width: 300px; } }
@@ -433,7 +447,8 @@ a {
     position: absolute;
     top: -20%;
     left: -20%;
-    z-index: -1;
+    z-index: -100;
+    pointer-events: none;
     width: 40rem; }
     @media only screen and (max-width: 576px) {
       .services__shape {
@@ -505,6 +520,10 @@ a {
         margin: 1rem auto; } }
   .media__title {
     font-size: 2rem; }
+    @media screen and (max-width: 600px) {
+      .media__title {
+        width: 80%;
+        margin: 0 auto; } }
 
 .testimonial {
   background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
@@ -570,11 +589,11 @@ a {
     border-top-right-radius: 30px;
     transition: all 0.3s ease-in-out; }
     .treatment__photo--1 {
-      background-image: url("../../images/needle.png"); }
+      background-image: url("../images/needle.png"); }
     .treatment__photo--2 {
-      background-image: url("../../images/microscope.png"); }
+      background-image: url("../images/microscope.png"); }
     .treatment__photo--3 {
-      background-image: url("/images/mask.png"); }
+      background-image: url("../images/mask.png"); }
   .treatment__photo:hover {
     transform: scale(1.2); }
   .treatment__container {
